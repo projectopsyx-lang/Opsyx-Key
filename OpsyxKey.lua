@@ -1,25 +1,4 @@
---[[
-    OPSYX PLATOBOOST USERID KEY SYSTEM - FIXED + LAUNCH CONTEXT v2.0
-
-    Service ID: 31267
-    Identifier: SHA-256(tostring(LocalPlayer.UserId))
-
-    NO DEVICE/HWID/MAC/IP/PC IDENTIFIER IS USED.
-
-    Platoboost public verification flow:
-      GET https://api.platoboost.app/public/whitelist/{service}
-      ?identifier=<hashed UserId>&key=<key>&nonce=<nonce>
-      (api.platoboost.net is used as fallback)
-
-    The returned integrity hash is verified as:
-      SHA-256("true-" .. nonce .. "-" .. secret)
-
-    IMPORTANT:
-    - This is a CLIENT-SIDE Platoboost integration.
-    - The secret is therefore visible to a capable client and should be
-      rotated if it has been exposed.
-    - The raw OPSYX1 URL is never fetched until authentication succeeds.
-]]
+--[[OPSYX PLATOBOOST USERID KEY SYSTEM - FIXED + LAUNCH CONTEXT v2.0]]
 
 if not game:IsLoaded() then
     game.Loaded:Wait()
