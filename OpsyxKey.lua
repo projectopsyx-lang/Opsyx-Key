@@ -1,5 +1,5 @@
 --[[
-    OPSYX PLATOBOOST USERID KEY SYSTEM - FIXED + LAUNCH CONTEXT v1
+    OPSYX PLATOBOOST USERID KEY SYSTEM - FIXED + LAUNCH CONTEXT v2.0
 
     Service ID: 31267
     Identifier: SHA-256(tostring(LocalPlayer.UserId))
@@ -54,7 +54,7 @@ local PLATOBOOST_HOSTS = {
     "https://api.platoboost.net",
 }
 
-local RAW_URL = "https://raw.githubusercontent.com/projectopsyx-lang/opsyxkey/refs/heads/main/opsyxload.lua"
+local RAW_URL = "https://raw.githubusercontent.com/projectopsyx-lang/Opsyx-Key/refs/heads/main/OpsyxLoad.lua"
 
 local DISCORD_URL = "https://discord.com/users/1529328825685508209"
 
